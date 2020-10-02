@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <View
+        android:id="@+id/card_view_5days_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/card_view_5days_tv_dt_txt"
+        android:layout_marginBottom="3dp"
+        android:text="przykladowa data"
+        android:textStyle="bold"
+
+
+        android:layout_below="@+id/card_view_5days_view"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/card_view_5days_iv_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/card_view_5days_tv_dt_txt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:id="@+id/card_view_5days_tv_temp"
+        android:layout_marginBottom="3dp"
+        android:text="przykladowa temperatura"
+        android:textSize="15dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/card_view_5days_iv_icon"
+        android:layout_below="@+id/card_view_5days_tv_dt_txt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:id="@+id/card_view_5days_tv_description"
+        android:layout_marginBottom="3dp"
+        android:text="przykladowy opis"
+        android:textSize="15dp"
+        android:textStyle="italic"
+
+        android:layout_toEndOf="@+id/card_view_5days_iv_icon"
+        android:layout_below="@+id/card_view_5days_tv_temp"
+        android:layout_marginLeft="20dp"
+        />
+
+        <!-- ==========================================================================  -->
+
+    <TextView
+        android:id="@+id/card_view_5days_tv_pressure_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciśnienie:"
+
+        android:layout_below="@+id/card_view_5days_tv_description"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/card_view_5days_tv_pressure"
+
+        android:text="przykladowe cisnienie"
+
+        android:layout_below="@+id/card_view_5days_tv_description"
+        android:layout_toEndOf="@+id/card_view_5days_tv_pressure_label"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/card_view_5days_tv_humidity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wilgotność:"
+
+        android:layout_below="@+id/card_view_5days_tv_pressure_label"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/card_view_5days_tv_humidiy"
+        android:layout_marginBottom="3dp"
+        android:text="przykladowa wilgotnosc"
+
+        android:layout_toEndOf="@+id/card_view_5days_tv_humidity_label"
+        android:layout_below="@+id/card_view_5days_tv_pressure"
+
+        />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

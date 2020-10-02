@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeLayout_current"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sky4"
+        >
+
+        <!-- HEADER: -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_current_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_current_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warszawa"
+                android:textSize="40dp"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+        </android.support.v7.widget.CardView>
+
+
+
+        <!-- ====================================================================================== -->
+        <!-- BASE: -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frame_layout_1_current"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:background="@color/colorThird"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/card_view_current_header"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/im_current_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_background"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_current_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 °C"
+                android:textSize="35dp"
+
+                android:layout_below="@+id/tv_current_city_name"
+                android:layout_toEndOf="@+id/im_current_icon"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="40dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_current_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deszcze"
+                android:textSize="22dp"
+                android:textStyle="italic"
+
+                android:layout_below="@+id/tv_current_temperature"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="140dp"
+
+                />
+        </android.support.v7.widget.CardView>
+
+
+        <!-- ====================================================================================== -->
+        <!-- BODY: -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frame_layout_2_current"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/frame_layout_1_current"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorThird">
+
+            <TextView
+                android:id="@+id/tv_current_pressure_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:text="Ciśnienie:"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_current_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_toEndOf="@id/tv_current_pressure_label"
+                android:text="1001 HPa"
+                android:textSize="25dp" />
+
+            <!-- ###################################################################################### -->
+
+
+            <TextView
+                android:id="@+id/tv_current_humidity_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_current_pressure_label"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="60dp"
+                android:text="Wilgotność:"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_current_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="60dp"
+
+                android:layout_toEndOf="@+id/tv_current_humidity_label"
+                android:text="30%"
+                android:textSize="25dp" />
+
+            <!-- ###################################################################################### -->
+
+            <TextView
+                android:id="@+id/tv_current_sunrise_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_current_humidity_label"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="100dp"
+                android:text="Wschód:"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_current_sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="100dp"
+
+                android:layout_toEndOf="@+id/tv_current_humidity"
+                android:text="06:00"
+                android:textSize="25dp" />
+
+            <!-- ###################################################################################### -->
+
+            <TextView
+                android:id="@+id/tv_current_sunset_label"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_current_sunrise_label"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="140dp"
+                android:text="Zachód:"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_current_sunset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="140dp"
+
+                android:layout_toEndOf="@+id/tv_current_sunrise"
+                android:text="21:00"
+                android:textSize="25dp" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2988BC</color>
+    <color name="colorPrimaryDark">#2F496E</color>
+    <color name="colorAccent">#ED8C72</color>
+    <color name="colorThird">#F4EADE</color>
+    <color name="background">#4CB5F5</color>
+    <color name="background2">#4897D8</color>
+
+    <color name="refresh">#008000</color>
+    <color name="refresh1">#008080</color>
+    <color name="refresh2">#800080</color>
+</resources>
